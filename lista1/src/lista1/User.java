@@ -17,8 +17,8 @@ public class User {
 		if(didUserBorrowBook(book)) 
 				borrowedBooks.put(book.toString(), borrowedBooks.get(book.toString()) - 1);
 		else
-			System.out.print("User cant return book: " + book.toString() + " " 	+ "he doesn't have it" );
-		
+			System.out.print("User cant return book: " + book.toString() + " " 	+ "he doesn't have it\n" );
+	
 	}
 	
 	public void borrowBook(Book book) {
