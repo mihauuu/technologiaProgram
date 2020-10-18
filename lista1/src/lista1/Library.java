@@ -27,7 +27,7 @@ public class Library {
 			stock.put(book.toString(), stock.get(book.toString()) - 1);
 		}
 		else
-			System.out.print("There's no" + " " + book.toString() + " in stock \\n");
+			System.out.print("There's no" + " " + book.toString() + " in stock \n");
 	}
 	
 	public boolean isBookInStock(Book book) {
