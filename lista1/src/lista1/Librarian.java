@@ -31,6 +31,7 @@ public class Librarian {
 		}
 		else {
 			System.out.print("User can't return book which he didn't borrow\n");
+			System.out.print("XD");
 		}
 	}
 	
