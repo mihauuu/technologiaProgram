@@ -4,21 +4,23 @@ import java.util.HashMap;
 
 public class Library {
 	
-	public HashMap<String ,Integer> stock;
-	private HashMap<Integer, User> users;
+	public HashMap <String, Integer> stock;
+	public HashMap<Integer, User> users;
 	
 	public Library() {
-		
+	
 		stock = new HashMap<>();
 		users = new HashMap<>();
 	}
 
 	public void addToStock(Book book) {
 		
-		if(isBookInStock(book))
+		if(isBookInStock(book)) {
 			stock.put(book.toString(), stock.get(book.toString()) + 1);
-		else
+		}
+		else {
 			stock.put(book.toString(), 1);
+		}
 	}
 	
 	public void removeFromStock(Book book) {
@@ -26,8 +28,9 @@ public class Library {
 		if(isBookInStock(book)) {
 			stock.put(book.toString(), stock.get(book.toString()) - 1);
 		}
-		else
+		else {
 			System.out.print("There's no" + " " + book.toString() + " in stock \n");
+		}
 	}
 	
 	public boolean isBookInStock(Book book) {
